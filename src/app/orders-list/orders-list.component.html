@@ -1,0 +1,16 @@
+<section class="column" *ngIf='orders'>
+    <div *ngFor="let order of orders" class="row">
+        <a routerLink="/order/{{order.orderID}}" routerLinkActive="active" >
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>Order number: {{order.orderID}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <span>Date: {{order.orderDate}}</span><br>
+                    <span>Number of products: {{order.products.length}}</span><br>
+                    <span>Item(s) Subtotal: {{order.totalPrice}} $</span><br>
+                </mat-card-content>
+            </mat-card>
+        </a>
+    </div>
+</section>

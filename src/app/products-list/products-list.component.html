@@ -1,0 +1,11 @@
+<section class="gallery"  *ngIf='products'>
+    <div *ngFor="let product of products" class="thumb">
+        <a routerLink="/product/{{product.objectID}}" routerLinkActive="active" >
+            <img src={{product.primaryImageSmall}}>
+            <div class="museum-label">
+                <span class="title">{{product.title}}</span><br>
+                <span class="artist">{{product.artistDisplayName}}</span>
+            </div>
+        </a>
+    </div>
+</section>

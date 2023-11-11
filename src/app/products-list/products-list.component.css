@@ -1,0 +1,51 @@
+a {
+    text-decoration: none;
+    color: #2e2225;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    grid-gap: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.thumb {
+    width: 100%;
+    position: relative;
+    height:100%
+}
+
+.thumb a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    justify-content:end;
+}
+
+.thumb img {
+    max-width: 300px;
+    max-height: 300px;
+    transition: all 0.5s;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5);
+}
+
+.museum-label {
+    background-color: #FFFFFF;
+    color: #2e2225;
+    margin-top:1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    padding:1em;
+}
+
+.artist{
+    font-weight:bold;
+}
+
+.title{
+    font-style:italic;
+}

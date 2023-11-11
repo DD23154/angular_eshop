@@ -1,0 +1,31 @@
+<main class="framing-main" *ngIf='user'>
+    <div class="img-preview">
+        <div class="img-wrapper"> 
+            <img [src]="user.primaryImage" class="user-photo">
+        </div>
+    </div>
+    <div class="user-info">
+        <div class="info-item">
+            <i class="fa-solid fa-user" style="color: #2e2225;"></i>
+            <span>{{user.firstName}} {{user.lastName}}</span><br>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-calendar-days" style="color: #000000;"></i>
+            <span>{{user.birthdate}}</span><br>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+            <span>{{user.email}}</span><br>
+        </div>
+         <div class="info-item">
+            <i class="fa-solid fa-phone" style="color: #000000;"></i>
+            <span>{{user.phoneNumber}}</span><br>
+        </div>
+        <div class="info-item">
+            <i class="fa-solid fa-house" style="color: #000000;"></i>
+            <span>{{user.streetddress}}</span><br>
+            <span class="address-item">{{user.townAddress}} {{user.zipCode}}</span><br>
+            <span class="address-item">{{user.country}}</span><br>
+         </div>
+    </div>
+</main>

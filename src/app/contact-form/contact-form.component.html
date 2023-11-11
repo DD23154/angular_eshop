@@ -1,0 +1,18 @@
+<form class="contact-container" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+    <mat-form-field required>
+      <mat-label>Enter your name</mat-label>
+      <input matInput placeholder="Name" required type="text" formControlName="Name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" required formControlName="Email">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Enter your message</mat-label>
+      <textarea matInput placeholder="Message" required formControlName="Message"></textarea>
+    </mat-form-field>
+  
+    <button class="contact-submit-btn" type="submit" [disabled]="!form.valid">Submit</button>
+</form>

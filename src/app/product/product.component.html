@@ -1,0 +1,27 @@
+<main class="product-main" *ngIf='product'>
+    <div class="img-preview">
+        <div class="img-wrapper">
+            <img src={{product.primaryImageSmall}}>
+        </div>
+        <div class="museum-label">
+            <span class="artist">{{product.artistDisplayName}} </span>
+            <span class="artist-dates">({{product.artistBeginDate}}-{{product.artistEndDate}})</span>
+            <br>
+            <span class="title">{{product.title}}</span>,
+            <span class="date">{{product.objectDate}}</span>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <div class="info-item"> 
+            <span class="size">Size: {{product.Height.toFixed(1)}}x{{product.Width.toFixed(1)}} cm</span><br>
+        </div>
+        <div class="info-item"> 
+            <span class="size">Medium: {{product.medium}}</span><br>
+        </div>
+        <div class="info-item"> 
+            <span class="price">Price: {{product.price}} $</span><br>
+        </div>
+        <button type="submit" class="btn-add2cart">Add to cart</button>
+    </div>
+</main>

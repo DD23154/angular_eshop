@@ -1,0 +1,70 @@
+.grid{
+  display: grid;
+  grid-template-columns: fit-content;
+  margin-top: 2%;
+  justify-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.columns{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 60px;
+}
+
+mat-card{
+  width: fit-content;
+  height: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.museum-label {
+  background-color: #FFFFFF;
+  color: #2e2225;
+  margin-top:0.1rem;
+  margin-bottom:0.4rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  padding:1em;
+  max-width: 300px;
+}
+.artist{
+  font-weight:bold;
+}
+.title{
+  font-style:italic;
+}
+.price{
+  font-weight:bold;
+}
+
+.product {
+  border: none;
+  width: 90%;
+  border-bottom: 2px solid #a2a3a3;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.product:last-of-type {
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-wrapper img {
+  max-width: 200px;
+  max-height: 200px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.5);
+}
+
+.prices-info {
+  margin-top: 15px;
+}
+
+.grand-total {
+  font-weight:bold;
+}

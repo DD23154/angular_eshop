@@ -1,0 +1,45 @@
+a {
+    text-decoration: none;
+    color: #2e2225;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    grid-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.thumb {
+    width: 100%;
+    position: relative;
+    height:100%;
+}
+
+.thumb a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    justify-content: center;
+}
+
+.user-info{
+    background-color: #FFFFFF;
+    color: #2e2225;
+    margin-top:1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    padding:1em;
+}
+
+.user-icon{
+    margin-right: 10px;
+}
+
+.user-photo img{
+    max-width: 200px;
+    border-radius: 50%;
+}

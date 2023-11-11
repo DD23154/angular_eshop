@@ -1,0 +1,13 @@
+<section class="grid" *ngIf='users'>
+    <div *ngFor="let user of users" class="thumb">
+        <a routerLink="/user/{{user.userID}}" routerLinkActive="active" >
+            <div class="user-photo">
+                <img [src]="user.primaryImage">
+            </div>
+            <div class="user-info">
+                <span class="user-icon"><i class="fa-solid fa-user" style="color: #2e2225;"></i></span>
+                <span>{{user.firstName}} {{user.lastName}}</span><br>
+            </div>
+        </a>
+    </div>
+</section>
