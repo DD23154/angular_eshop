@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderService } from '../services/order.service';
-import { Subscription, finalize } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { Order } from '../order';
 import { ProductService } from '../services/product.service';
 import { Product } from '../product';
@@ -25,6 +25,10 @@ export class OrdersListComponent implements OnInit {
         
       }
     });
+  }
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
   }
 
   calculateTotalPrices(): void {

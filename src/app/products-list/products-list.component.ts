@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { Product } from '../product';
-import { Observable, Subscription } from 'rxjs';
-import { ProductComponent } from '../product/product.component';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'products-list',
@@ -23,5 +22,8 @@ export class ProductsListComponent implements OnInit {
       }
     });
   }
-
+  
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+  }
 }
